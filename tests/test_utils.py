@@ -20,3 +20,6 @@ def test_srednia_z_pustej_listy():
 
 
 # TODO (student): dopisz własny test dla innej listy 10 ocen.
+def test_srednia_z_innej_listy():
+    oceny = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    assert oblicz_srednia(oceny) == pytest.approx(5.5)
