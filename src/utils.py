@@ -13,5 +13,6 @@ def oblicz_srednia(oceny: list[float]) -> float:
     Raises:
         ValueError: Gdy lista jest pusta.
     """
-    # TODO (zadanie 1): sprawdź pustą listę i oblicz średnią.
-    raise NotImplementedError("Uzupełnij funkcję oblicz_srednia w src/utils.py")
+    if not oceny:
+        raise ValueError("nie można obliczyć średniej z pustej listy ocen")
+    return sum(oceny) / len(oceny)
